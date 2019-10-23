@@ -6,7 +6,7 @@ const Friends = require('./data/friends.js');
 //  Constants, Dependencies, and Variables for Express
 const apiRoutes = require('./routing/apiRoutes.js');
 const htmlRoutes = require('./routing/htmlRoutes.js');
-const app = exress();
+const app = express();
 
 //  Constants, Dependencies, and Variables for Path
 const homePath = './public/home.html';
