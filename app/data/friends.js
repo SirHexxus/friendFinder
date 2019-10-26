@@ -1,4 +1,7 @@
 //  This file will hold the constructor for the Friend Object
+//  //  An array to hold all Friends
+const friends = [];
+
 const Friend = (name, pic) => {
     this.name = name;
     this.photo = pic;
@@ -20,4 +23,7 @@ const Friend = (name, pic) => {
     }
 }
 
-module.exports = Friend;
+module.exports = {
+    Friend          : Friend,
+    friendHolder    : friends
+}
