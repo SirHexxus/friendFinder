@@ -1,29 +1,8 @@
 //  This file will hold the constructor for the Friend Object
-//  //  An array to hold all Friends
-const friends = [];
-
-const Friend = (name, pic) => {
+const Friend = (name, pic, scoreArr) => {
     this.name = name;
     this.photo = pic;
-    this.scores = [];
-    this.addScore = function(score) {
-        if(this.scores.length < 15) {
-            this.scores.push(score)
-        }
-        else {
-            return console.log("Too many scores!");
-        }
-    }
-    this.listScores = function() {
-        let temp;
-        for(let i = 0; i < this.scores.length; i++) {
-            temp += this.scores[i] + '\n';
-        }
-        return temp;
-    }
+    this.scores = scoreArr;
 }
 
-module.exports = {
-    Friend          : Friend,
-    friendHolder    : friends
-}
+module.exports = Friend;
