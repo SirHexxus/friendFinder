@@ -21,6 +21,9 @@ htmlRoutes.home(app);
 htmlRoutes.survey(app);
 
 //  //  API Routes
+apiRoutes.show(app);
+apiRoutes.add(app);
+console.log(apiRoutes.friends);
 
 // Starts the server listening to PORT
 // =============================================================
